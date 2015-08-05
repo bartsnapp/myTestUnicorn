@@ -1,31 +1,25 @@
 \documentclass{ximera}
-
-\title{My test}
-
-%\newcommand{\geogebra}[1][]{geogebra #1}
-
+\usepackage{chemfig}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+ 
+ 
 \begin{document}
-\begin{abstract}
-  Here it is.
-\end{abstract}
-\maketitle
+ 
+%% See page 38 of the manual
+%% http://mirrors.rit.edu/CTAN/macros/generic/chemfig/chemfig_doc_en.pdf
+\setcrambond{2pt}{}{} %% Gives cool 3D look
+ 
+\chemfig{
+  HO-[2,.5,2]?<[7,0.7](-[2,0.5]OHa)-[,,,,line width=2pt](-[6,0.5]OHb)>[1,0.7]
+  (-[6,0.5]OHc)-[3,0.7]Od-[4]?(-[2,0.3]-[3,0.5]OHe)}
 
-\geogebra{miE0CBFHm}
-
-\begin{multipleChoice}
-  How do you say goodbye?
-  \choice{hello}
-  \choice{hi}
-  \choice[correct]{see you later}
-  \choice{stare}
-\end{multipleChoice}
-
-Another change
-
-And another!
-
-And another!
-
-I just made a change
+ 
+\begin{otherlanguage*}{russian}
+Текст на русском языке
+\end{otherlanguage*}
+ 
+A word and another \foreignlanguage{russian}{слово}
+ 
 
 \end{document}
