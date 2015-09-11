@@ -1,6 +1,8 @@
 \documentclass{ximera}
 
 
+\input{preamble.tex}
+
 \title{My test of CSS}
  
  
@@ -43,15 +45,15 @@ yticklabels={$f(b)$,$f(a)=u$,$f(n)$},
 \closedcycle;
           \addplot [draw=none, fill=background, domain=(0:7)] {.203} 
 \closedcycle;
-          \addplot [textColor,dashed] plot coordinates {(0,1.679) 
+          \addplot [dashed] plot coordinates {(0,1.679) 
 (6,1.679)};
-          \addplot [textColor,dashed] plot coordinates {(0,.203) 
+          \addplot [dashed] plot coordinates {(0,.203) 
 (6,.203)};
-          \addplot [textColor,dashed] plot coordinates {(5,0) 
+          \addplot [dashed] plot coordinates {(5,0) 
 (5,1.679)};
-          \addplot [textColor,dashed] plot coordinates {(1,0) 
+          \addplot [dashed] plot coordinates {(1,0) 
 (1,.203)};
-          \addplot [textColor,dashed] plot coordinates {(3.587,0) 
+          \addplot [dashed] plot coordinates {(3.587,0) 
 (3.597,1)};
           \addplot [penColor2,domain=(0:6)] {1};
           \addplot [very thick,penColor, smooth,domain=(0:2.5)] 
@@ -60,7 +62,7 @@ yticklabels={$f(b)$,$f(a)=u$,$f(n)$},
 {sin(deg((x - 4)/2)) + 1.2};
           \addplot [very thick,dashed,penColor!50!background, 
 smooth,domain=(2.5:4)] {sin(deg((x - 4)/2)) + 1.2}; 
-          \addplot \
+          \addplot 
 [color=penColor!50!background,fill=penColor!50!background,only 
 marks,mark=*] coordinates{(3.587,1)};  %% closed hole          
           \addplot [color=penColor,fill=penColor,only marks,mark=*] 
