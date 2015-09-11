@@ -10,6 +10,7 @@
 Hello  
 \end{abstract}
 \maketitle
+
 \begin{exercise}
 \outcome{State the Intermediate Value Theorem including hypotheses.}
 \tag{continuity}
@@ -20,7 +21,7 @@ $[b,n]$ and $u$ is between
 \wordChoice{\choice{$b$}\choice[correct]{$f(b)$}} and
 \wordChoice{\choice{$n$}\choice[correct]{$f(n)$}}, then there is a
 number \wordChoice{\choice[correct]{$a$}\choice{$f(a)$}} in
-  \wordChoice{\choice{$(b,n)$}\choice[correct]{$[b, n]$}} such that
+  \wordChoice{\choice{$[f(b),f(n)]$}\choice[correct]{$[b, n]$}} such that
   \wordChoice{\choice[correct]{$f(a) = u$},\choice{$f(u) = a$}}.
 \end{theorem}
 \begin{hint}
@@ -33,7 +34,7 @@ Consider the following graph:
             every axis y label/.style={at=(current axis.above origin),anchor=south},
             every axis x label/.style={at=(current axis.right of origin),anchor=west},
             xtick={1,3.597,5}, ytick={.203,1,1.679},
-            xticklabels={$b$,$a$,$n$}, yticklabels={$f(b)$,$f(a)=u$,$f(n)$},
+            xticklabels={$b$,$a$,$n$}, yticklabels={$f(b)$,$u$,$f(n)$},
             axis on top,
           ]
           \addplot [draw=none, fill=fill2, domain=(0:7)] {1.679} \closedcycle;
@@ -55,5 +56,4 @@ Consider the following graph:
 \end{image}
 \end{hint}
 \end{exercise}
-
 \end{document}
